@@ -1,0 +1,38 @@
+"""
+Kelvin v0.12
+Written in Python 3
+author: nerostax
+"""
+#Heading
+print("-------------------------------------------")
+print("|Kelvin v0.12                               |")
+print("|Convert Celcius and Fahrenheit to Kelvin   |")
+print("|C/F to Kelvin                              |")
+print("|Fariz Alfarizi                             |")
+print("--------------------------------------------")
+
+#Input prompt
+temp = int(input("Suhu?"))
+unit = str(input("Dalam satuan(c/f)?"))
+
+#Conversion
+if unit == "c":
+  print("Celcius")
+  tempc = str(temp)
+  print(tempc + " " + unit)
+  print("Kelvin")
+  tempkc = str(temp + 273)
+  print(tempkc + " " + " k")
+
+elif unit == "f":
+  print("Fahrenheit")
+  tempc = str(temp)
+  print(tempc + " " + unit)
+  print("Kelvin")
+  tempkc = str(((temp - 32) / 9) * 5 + 273)
+  print(tempkc + " " + " k")
+  
+else:
+  print("Cannot process. Halt!")
+  
+#The end
